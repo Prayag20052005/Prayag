@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Villa</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Mangalam Villa</h1>
+            <!-- WhatsApp Logo with link -->
+<a href="https://api.whatsapp.com/send?phone=919503347469&text=Hello%20I%20want%20to%20book%20a%20villa%20at%20Luxury%20Villa." target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+</a>
+
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-gray-600 hover:text-gray-800">About</a></li>
+                    <li><a href="#gallery" class="text-gray-600 hover:text-gray-800">Gallery</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="bg-cover bg-center h-screen" style="background-image: url('https://example.com/villa.jpg');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center text-white">
+                <h2 class="text-4xl md:text-6xl font-bold">Experience Paradise</h2>
+                <p class="mt-4 text-lg md:text-xl">Escape to a luxurious retreat designed for ultimate relaxation.</p>
+                <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white text-lg rounded-lg shadow hover:bg-blue-700">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 text-center">About Us</h2>
+            <p class="mt-4 text-center text-gray-600">Nestled in a serene location, our villa offers unmatched comfort and luxury. Enjoy breathtaking views, world-class amenities, and exceptional service.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 text-center">Gallery</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <img src="https://example.com/photo1.jpg" alt="Villa photo 1" class="rounded-lg shadow-md">
+                <img src="https://example.com/photo2.jpg" alt="Villa photo 2" class="rounded-lg shadow-md">
+                <img src="https://example.com/photo3.jpg" alt="Villa photo 3" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 text-center">Contact Us</h2>
+            <form class="mt-8 max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-600">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-600">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="checkin" class="block text-gray-600">Check-in Date</label>
+                    <input type="date" id="checkin" class="w-full px-4 py-2 border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="checkout" class="block text-gray-600">Check-out Date</label>
+                    <input type="date" id="checkout" class="w-full px-4 py-2 border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-600">Message</label>
+                    <textarea id="message" class="w-full px-4 py-2 border rounded-lg" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=919503347469" class="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">Send</a>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto text-center text-white">
+            <p>&copy; 2025 Luxury Villa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

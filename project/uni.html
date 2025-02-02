@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Villa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-wider">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-800">Mangalam Villa</h1>
+            <nav>
+                <ul class="flex space-x-8 text-lg font-semibold">
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-600 transition-all">About</a></li>
+                    <li><a href="#gallery" class="text-gray-700 hover:text-blue-600 transition-all">Gallery</a></li>
+                    <li><a href="https://wa.me/919503347469?text=I%20want%20to%20book%20a%20stay%20at%20Mangalam%20Villa" class="text-gray-700 hover:text-blue-600 transition-all" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-cover bg-center h-screen" style="background-image: url('https://example.com/villa.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="flex items-center justify-center h-full text-center text-white px-6">
+            <div>
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight">Experience Paradise</h2>
+                <p class="mt-4 text-xl md:text-2xl font-light">Escape to a luxurious retreat designed for ultimate relaxation.</p>
+                <a href="#contact" class="mt-6 inline-block px-8 py-3 bg-blue-600 text-white text-lg rounded-full shadow-xl hover:bg-blue-700 transform hover:scale-105 transition-all">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-semibold text-gray-800">About Us</h2>
+            <p class="mt-4 text-xl text-gray-600 max-w-4xl mx-auto">
+                Nestled in a serene location, our villa offers unmatched comfort and luxury. Enjoy breathtaking views, world-class amenities, and exceptional service. Experience a one-of-a-kind vacation in the heart of nature, designed for ultimate relaxation and peace.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-semibold text-gray-800">Gallery</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <img src="C:\Users\Prayag Mehta\Desktop\project\mv.jpg" alt="Villa photo 1" class="rounded-lg shadow-xl transform hover:scale-105 transition-all">
+                <img src="C:\Users\Prayag Mehta\Desktop\project\mv1.jpg" alt="Villa photo 2" class="rounded-lg shadow-xl transform hover:scale-105 transition-all">
+                <img src="C:\Users\Prayag Mehta\Desktop\project\mv2.jpg" alt="Villa photo 3" height="50" class="rounded-lg shadow-xl transform hover:scale-105 transition-all">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-gray-800 text-center">Contact Us</h2>
+            <form action="https://formspree.io/f/mldgnpjd" method="POST" class="mt-12 max-w-lg mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
+                <!-- Hidden Inputs for Formspree -->
+                <input type="hidden" name="_next" value=""> <!-- Success page URL -->
+                <input type="hidden" name="_subject" value="New submission from Luxury Villa">
+
+                <!-- Name Input -->
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-600 font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
+                </div>
+
+                <!-- Email Input -->
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-600 font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email" required>
+                </div>
+
+                <!-- Check-in Date -->
+                <div class="mb-6">
+                    <label for="checkin" class="block text-gray-600 font-medium">Check-in Date</label>
+                    <input type="date" id="checkin" name="checkin" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Check-out Date -->
+                <div class="mb-6">
+                    <label for="checkout" class="block text-gray-600 font-medium">Check-out Date</label>
+                    <input type="date" id="checkout" name="checkout" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Message Input -->
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-600 font-medium">Message</label>
+                    <textarea id="message" name="message" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" rows="6" placeholder="Your Message"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto text-center text-white">
+            <p>&copy; 2025 Luxury Villa. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
